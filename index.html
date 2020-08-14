@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/js.js"> </script>
     <script src="js/jquery-3.4.1.min.js"> </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <title>Felicia - Emporio & Confeitaria</title>
-    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
@@ -46,7 +44,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
                 
-                $(this).animate({'opacity':'1'},1500);
+                $(this).animate({'opacity':'1'},1300);
                     
             }
             
@@ -103,12 +101,12 @@ $(document).ready(function() {
 
         </div>
 
-        <div class="quemsomos hideme" id="quemsomos">
-            <div class="container">
-            <div class="quemsomos-item">
+        <div class="quemsomos" id="quemsomos">
+            <div class="container ">
+            <div class="quemsomos-item hideme">
                 <img src="img/quemsomos.png">
             </div>
-            <div class="quemsomos-item">
+            <div class="quemsomos-item hideme">
                  <div class="quemsomos-texto">
                 <h2>Quem somos</h2>
                 <p>Felicia é uma empresa nova, fundada em 2017 e  conceituada rapidamente no mercado gastronômico pelo cuidado e carinho com sua clientela fiel. Nossos produtos são feitos com dedicação, por uma equipe de profissionais treinados que procuram dar ao público o melhor da confeitaria. </p>
@@ -118,10 +116,10 @@ $(document).ready(function() {
         </div>
         
         <div class="background2">
-        <div class="nossosprodutos hideme">
-            <img src="img/wedding-cake.png" width="170px" height="170px">
-            <h3>Os bolos Felicia são uma mistura de paladar e refinamento, combinados para proporcionar uma explosão de sabores. </h3>
-            <button class="button">Nossos produtos</button>
+        <div class="nossosprodutos">
+            <img class ="hideme" src="img/wedding-cake.png" width="170px" height="170px">
+            <h3 class="hideme">Os bolos Felicia são uma mistura de paladar e refinamento, combinados para proporcionar uma explosão de sabores. </h3>
+            <button class="button hideme">Nossos produtos</button>
         </div>
        </div>
        
