@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/js.js"> </script>
+    <script src="js/jquery-3.4.1.min.js"> </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <title>Felicia - Emporio & Confeitaria</title>
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+
+    <script>
+
+$(document).ready(function() {
+        
+        $('#hamburguer').click(function() {
+    
+            $('nav').slideToggle()
+            $('.icon').toggle()
+            $('.icon2').toggle()
+    
+        })
+        
+        
+    
+    })
+
+
+    
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1300);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+
+
+    </script>
+    <div class="background1">
+
+        <div class="topo-mobile">
+
+            <div id="hamburguer">
+                <ul>
+                    <li class="icon"><img src="img/menu.png" width=30px height=30px></li>
+                    <li class="icon2"><img src="img/x.png" width=26px height=26px></li>
+                </ul></div>
+        </div>
+
+        <nav class="fade-in">
+            <ul>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="encomendas.html">Encomendas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="index.html#quemsomos">Quem Somos</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo-mobile">
+
+            <div class="logofelicia">Felicia</div><p>Sabor<b>&</b>inovação</p>
+
+        </div>
+
+        <div class="logo fade-in">
+            <div class="logofelicia2">Felicia</div> <p>Sabor<b>&</b>inovação</p>
+        </div>
+
+            <div class="carrossel container">
+                    <div class="carrossel-item hideme">
+                    <img src="img/carr1.png"><h3>Coffe Break</h3></div>
+                    <div class="carrossel-item hideme">
+                    <img src="img/carr2.png"><h3>Sugar Rush</h3></div>
+                    <div class="carrossel-item hideme">
+                    <img src="img/carr3.png"><h3>Choco Bomb</h3></div>
+                    <div class="carrossel-item hideme">
+                    <img src="img/carr4.png"><h3>Milky Way</h3></div>
+            </div>
+
+        </div>
+
+        <div class="quemsomos" id="quemsomos">
+            <div class="container ">
+            <div class="quemsomos-item hideme">
+                <img src="img/quemsomos.png">
+            </div>
+            <div class="quemsomos-item hideme">
+                 <div class="quemsomos-texto">
+                <h2>Quem somos</h2>
+                <p>Felicia é uma empresa nova, fundada em 2017 e  conceituada rapidamente no mercado gastronômico pelo cuidado e carinho com sua clientela fiel. Nossos produtos são feitos com dedicação, por uma equipe de profissionais treinados que procuram dar ao público o melhor da confeitaria. </p>
+                 </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="background2">
+        <div class="nossosprodutos">
+            <img class ="hideme" src="img/wedding-cake.png" width="170px" height="170px">
+            <h3 class="hideme">Os bolos Felicia são uma mistura de paladar e refinamento, combinados para proporcionar uma explosão de sabores. </h3>
+            <button class="button hideme">Nossos produtos</button>
+        </div>
+       </div>
+       
+       <div class="horario hideme">
+           <h2>Horário de Funcionamento</h2>
+                <p>Segunda á sábado: 07:00 hs às 20:00 hs<br>
+                Domingo e feriados: 07:00 hs às 17:00 hs</p>
+        </div>
+
+            <div class="creditos hideme">
+                <h2>Créditos</h2>
+                <p>A empresa Felicia é fictícia, e foi criada para estudo e portfólio.</p>
+                <p>Foto do background criada por <a href="https://www.freepik.com/photos/food">azerbaijan_stockers - www.freepik.com</a></p> 
+                <p>Fotos do carrossel criados por <a href="https://www.freepik.com/photos/background"> Freepik - www.freepik.com</a></p> 
+                <p>Ícones criados por <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> e  <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>  </p>
+                <p> Foto do carrossel criada por <a href="https://www.freepik.com/photos/food"> 8photo - www.freepik.com</a>
+               
+            </div>
+
+        <footer class="hideme">
+            <div class="container">
+                <div class="footer-item">
+                    <h2>Nosso endereço</h2>
+                    <p>Rua Antonio Figueira, 1010 - Vila Mariana. São paulo, SP</p>
+                    <p>contato@feliciaconfeitaria.com.br</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Nos acompanhe</h2>
+                    <ul>
+                        <li><img src="img/twitter.png"></li>
+                        <li><img src="img/instagram.png"></li>
+                        <li><img src="img/facebook.png"></li>
+                    </ul>
+                    <button type="submit">Enviar</button>
+                    <input type="text" placeholder="Digite seu e-mail">
+                </div>
+            </div>
+        </footer>
+
+        <div class="marcadagua">
+                <h3>Site projetado e desenvolvido por Catarina Faria Mendes</h3>
+        </div>
+
+</body>
+</html>
